@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <title>Software Defect Prediction</title>
+</head>
+<body>
+    <div class="topnav">
+        <a class="active" href="/home">Home</a>
+        <a class="active" href="/upload">Upload</a>
+    </div>
+    <div class="wrapper Card2">
+        <div class="title">Software Defect Prediction</div>
+        <form action="/"  method="POST">
+            <div class="form">
+                <div class="inputfield">
+                    <label for="ram">loc(numeric-McCabe's line count of code)</label>
+                    <input class="input" type="text" name="loc" required>
+                </div>
+                <div class="inputfield">
+                    <label for="weight">n(numeric Halstead total operators + operands)</label>
+                    <input class="input" type="text" name="n" required>
+                </div>
+                <div class="inputfield">
+                    <label for="weight">v(numeric Halstead "volume")</label>
+                    <input class="input" type="text" name="v" required>
+                </div>
+                <div class="inputfield">
+                    <label for="weight">e(numeric Halstead "effort")</label>
+                    <input class="input" type="text" name="e" required>
+                </div>
+                <div class="inputfield">
+                    <label for="weight">t(numeric % Halstead's time estimator)</label>
+                    <input class="input" type="text" name="t" required>
+                </div>
+                <div class="inputfield">
+                    <label for="weight">lOCode(numeric Halstead's line count)</label>
+                    <input class="input" type="text" name="lOCode" required>
+                </div>
+                <div class="inputfield">
+                    <label for="weight">uniq_Opnd(numeric unique operands)</label>
+                    <input class="input" type="text" name="uniq_Opnd" required>
+                </div>
+                <div class="inputfield">
+                    <label for="weight">total_Op(numeric total operators)</label>
+                    <input class="input" type="text" name="total_Op" required>
+                </div>
+                <div class="inputfield">
+                    <label for="weight">total_Opnd(numeric % total operands)</label>
+                    <input class="input" type="text" name="total_Opnd" required>
+                </div>
+                <div class="inputfield">
+                    <label for="weight">branchCount(numeric of the flow graph)</label>
+                    <input class="input" type="text" name="branchCount" required>
+                </div>
+                
+    
+                <div class="inputfield">
+                    <input class="btn" type="submit" value="Detect Defect">
+                </div>
+            </div>
+        </form>
+
+        <!-- <div class="result">
+            {% if pred_value != 0 %}
+            <p>Estimated Price : LKR {{pred_value}}</p>
+            {% endif %}
+        </div>
+    </div>
+</body>
+</html>

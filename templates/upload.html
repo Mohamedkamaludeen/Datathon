@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <title>Upload File</title>
+</head>
+<body>
+    <div class="topnav">
+        <a class="active" href="/home">Home</a>
+        <a class="active" href="/upload">Upload</a>
+    </div>
+    <div class="center-card">
+        <div class="container Card">
+            <p>Click on the "Choose File" button to upload a file:</p>
+            <form action="/action_page.php">
+            <input type="file" id="myFile" name="filename">
+            <br/>
+            <div class="sub_btn">
+                <input type="submit">
+            </div>
+            </form>
+            <div class="fix_btn">
+                <input type="submit" value="Fixed the Error">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
